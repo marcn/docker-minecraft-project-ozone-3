@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ENV SERVER_ZIP=https://media.forgecdn.net/files/2675/6/PO3-3.0.38.zip
+ENV SERVER_ZIP=https://media.forgecdn.net/files/2676/712/PO3+v.3.0.38+Server.zip
 
 RUN apk --no-cache add wget openssl unzip
 RUN addgroup -g 1234 minecraft
