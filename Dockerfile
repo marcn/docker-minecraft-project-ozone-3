@@ -1,8 +1,8 @@
 FROM openjdk:8-jre-alpine
 
-ENV SERVER_ZIP=https://media.forgecdn.net/files/2676/712/PO3+v.3.0.38+Server.zip
+ENV SERVER_ZIP=https://media.forgecdn.net/files/2735/217/PO3-3.0.41-SERVER.zip
 
-RUN apk --no-cache add wget openssl unzip
+RUN apk --no-cache add wget openssl unzip bash
 RUN addgroup -g 1234 minecraft
 RUN adduser -D -h /data -u 1234 -G minecraft -g "minecraft user" minecraft
 
@@ -23,8 +23,8 @@ VOLUME /data
 ADD server.properties /tmp/server.properties
 WORKDIR /data
 
-CMD /start
-
-ENV MOTD A Minecraft (Project Ozone 3) Server Powered by Docker
+ENV MOTD "Minh's first modded Minecraft :)"
 ENV LEVEL world
-ENV JVM_OPTS -Xms2048m -Xmx2048m
+ENV JVM_OPTS -Xms2G -Xmx5G
+
+CMD /start
