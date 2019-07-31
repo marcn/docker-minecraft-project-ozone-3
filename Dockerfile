@@ -25,7 +25,7 @@ WORKDIR /data
 
 ENV MOTD "Minh's first modded Minecraft :)"
 ENV LEVEL world
-ENV OPS applefreak111
+ENV OPS applefreak_111
 ENV JVM_OPTS -Xms2G -Xmx5G
 
 CMD /start
