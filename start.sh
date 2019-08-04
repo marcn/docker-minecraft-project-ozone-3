@@ -25,4 +25,4 @@ if [[ -n "$OPS" ]]; then
     echo $OPS | awk -v RS=, '{print}' >> ops.txt
 fi
 
-java $JVM_OPTS -jar forge-2838.jar nogui
+java $JVM_OPTS -Dfml.queryResult=confirm -jar forge-2838.jar nogui
