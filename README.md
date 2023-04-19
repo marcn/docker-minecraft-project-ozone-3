@@ -1,6 +1,6 @@
 # Docker Project Ozone 3
 
-This repository allows you to run a Project Ozone 3 Minecraft server using Docker.
+This repository allows you to run a Project Ozone 3 (3.4.11F) Minecraft server using Docker.
 
 ## Setup
 
