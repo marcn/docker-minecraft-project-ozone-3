@@ -26,6 +26,7 @@ WORKDIR /data
 ENV MOTD "Boarland Project Ozone 3"
 ENV LEVEL world
 ENV OPS WaterCrab
+ENV PACKMODE kappa
 ENV JVM_OPTS -Xms2G -Xmx8G
 
 CMD /start

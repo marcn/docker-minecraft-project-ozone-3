@@ -25,4 +25,8 @@ if [[ -n "$OPS" ]]; then
     echo $OPS | awk -v RS=, '{print}' >> ops.txt
 fi
 
+if [[ -n "$PACKMODE" ]]; then
+    sed -i "/S:packMode=\s*/ c S:packMode=$PACKMODE" /data/config/packmode.cfg
+fi
+
 java $JVM_OPTS -Dfml.queryResult=confirm -jar forge-1.12.2-14.23.5.2860.jar nogui
