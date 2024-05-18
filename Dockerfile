@@ -14,8 +14,8 @@ RUN mkdir /tmp/minecraft && cd /tmp/minecraft && \
 
 USER minecraft
 
-EXPOSE 25565
-EXPOSE 25575
+EXPOSE 25566
+EXPOSE 25576
 
 ADD start.sh /start
 
